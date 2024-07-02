@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  spring:
+    datasource:
+      url: jdbc:mysql://localhost:3306/yourdb
+      username: yourusername
+      password: yourpassword
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+
+
+logging:
+  level:
+    root: INFO
+    com.example.educationalrobot: DEBUG
+
+iflytek:
+  api:
+    key: your_iflytek_api_key
+    secret: your_iflytek_api_secret
