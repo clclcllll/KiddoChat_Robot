@@ -1,5 +1,7 @@
 package com.example.educationalrobot1.entity;
 
+import jakarta.persistence.Entity;
+
 import javax.persistence.*;
 
 @Entity
