@@ -18,6 +18,7 @@ public class IFlyTekClient {
     public String processText(String text) {
         // 这里编写与科大讯飞API的交互逻辑
         // 返回示例结果
+        int i = 0;
         return "处理结果";
     }
 
