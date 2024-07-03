@@ -2,7 +2,6 @@ package com.example.educationalrobot1.service;
 
 import com.example.educationalrobot1.dto.EvaluationRequest;
 import com.example.educationalrobot1.dto.EvaluationResult;
-import com.example.educationalrobot1.entity.EvaluationResult;
 import com.example.educationalrobot1.repository.EvaluationResultRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

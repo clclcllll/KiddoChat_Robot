@@ -1,9 +1,11 @@
 package com.example.educationalrobot1.entity;
 
+import jakarta.persistence.Entity;
+
 import javax.persistence.*;
 
 @Entity
-public class EvaluationResult {
+public class Evaluation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
