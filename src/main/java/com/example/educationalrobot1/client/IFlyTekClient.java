@@ -13,7 +13,7 @@ public class IFlyTekClient {
         this.apiKey = apiKey;
         this.apiSecret = apiSecret;
     }
-
+    int i=0;
     // 示例方法，用于调用科大讯飞API进行自然语言处理
     public String processText(String text) {
         // 这里编写与科大讯飞API的交互逻辑
