@@ -28,7 +28,8 @@ public class IFlyTekClient {
     }
 
     public byte[] synthesizeSpeech(String text) {
-        // 调用科大讯飞API进行语音合成
+        // 这里编写与科大讯飞API的交互逻辑
+        // 返回合成的语音数据
         return new byte[0];
     }
 

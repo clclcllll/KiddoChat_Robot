@@ -1,11 +1,10 @@
 package com.example.educationalrobot1.entity;
 
-import jakarta.persistence.Entity;
-
 import javax.persistence.*;
 
 @Entity
-public class Evaluation {
+@Table(name = "evaluation_results")
+public class EvaluationResult {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,8 +16,7 @@ public class Evaluation {
     @Column(nullable = false)
     private String evaluationScore;
 
-    // getters and setters
-
+    // Getters and Setters
     public Long getId() {
         return id;
     }
