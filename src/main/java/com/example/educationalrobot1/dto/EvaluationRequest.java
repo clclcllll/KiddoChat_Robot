@@ -7,7 +7,6 @@ public class EvaluationRequest {
     public String getUserResponse() {
         return userResponse;
     }
-
     public void setUserResponse(String userResponse) {
         this.userResponse = userResponse;
     }
