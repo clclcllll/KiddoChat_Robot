@@ -87,6 +87,12 @@
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
+        <!-- Spring Boot Starter Scheduling -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-scheduling</artifactId>
+        </dependency>
+
         </dependencies>
 
     <repositories>

@@ -2,18 +2,15 @@ server:
   port: 8080
 
 spring:
-  spring:
-    datasource:
-      url: jdbc:mysql://localhost:3306/yourdb
-#      //连接mysql地址
-      username: yourusername
-      password: yourpassword
-      driver-class-name: com.mysql.cj.jdbc.Driver
-    jpa:
-      hibernate:
-        ddl-auto: update
-      show-sql: true
-
+  datasource:
+    url: jdbc:mysql://localhost:3306/yourdb
+    username: yourusername
+    password: yourpassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 logging:
   level:
@@ -25,5 +22,3 @@ iflytek:
     appid: 79b77970
     secret: MWU0OTA4YmZlZmE5ZDdiNTg2MmYwOWJk
     key: cd5e710d6dff72e5d6d1fe79bf20bd34
-
-

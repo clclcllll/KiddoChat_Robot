@@ -40,4 +40,5 @@ public class Evaluation {
     public void setEvaluationScore(String evaluationScore) {
         this.evaluationScore = evaluationScore;
     }
+    // 其他属性和方法
 }

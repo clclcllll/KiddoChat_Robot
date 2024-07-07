@@ -1,9 +1,9 @@
 package com.example.educationalrobot1.config;
 
-import com.example.educationalrobot1.client.IFlyTekClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 public class IFlyTekConfig {
@@ -15,7 +15,11 @@ public class IFlyTekConfig {
     private String apiSecret;
 
     @Bean
-    public IFlyTekClient iflyTekClient() {
-        return new IFlyTekClient(apiKey, apiSecret);
+    public WebClient webClient() {
+        return WebClient.builder()
+                .baseUrl("https://api.xfyun.cn/v1/service/v1/spark")
+                .defaultHeader("Content-Type", "application/json")
+                .defaultHeader("Authorization", "Bearer " + apiKey + ":" + apiSecret)
+                .build();
     }
 }
